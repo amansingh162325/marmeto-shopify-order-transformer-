@@ -1,12 +1,16 @@
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule, {
+    rawBody: true,
+  });
+
   app.setGlobalPrefix('api');
-  app.enableCors();
-  const port = Number(process.env.PORT) || 3000;
-  await app.listen(port, '0.0.0.0');
-  console.log(`Application running at http://localhost:${port}/api`);
+
+  await app.listen(process.env.PORT ?? 3000);
+  console.log(`Application running on port ${process.env.PORT ?? 3000}`);
 }
+
 bootstrap();
