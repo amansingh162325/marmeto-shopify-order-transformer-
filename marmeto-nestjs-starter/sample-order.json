@@ -1,0 +1,43 @@
+{
+  "id": 5612345678901,
+  "name": "#1042",
+  "email": "",
+  "contact_email": "Asha.V@example.com ",
+  "currency": "INR",
+  "total_discounts": "251.15",
+  "customer": { "id": 7012345678, "email": null, "first_name": "Asha" },
+  "line_items": [
+    {
+      "id": 14001, "sku": "TEE-BLK-M", "quantity": 2, "price": "599.00",
+      "properties": [],
+      "discount_allocations": [{ "amount": "119.80", "discount_application_index": 0 }]
+    },
+    {
+      "id": 14002, "sku": "GIFTBOX-STD", "quantity": "1", "price": "149.00",
+      "properties": [{ "name": "_bundle_parent", "value": "14003" }],
+      "discount_allocations": []
+    },
+    {
+      "id": 14003, "sku": "HAMPER-DIWALI", "quantity": 1, "price": "1299.00",
+      "properties": [{ "name": "_bundle_id", "value": "B-77" }],
+      "discount_allocations": [{ "amount": "130.20", "discount_application_index": 0 }]
+    },
+    {
+      "id": 14004, "sku": null, "quantity": 3, "price": "0.10", "properties": null
+    },
+    {
+      "id": 14005, "sku": "SOCK-3PK", "quantity": 3, "price": "199.90",
+      "properties": [{ "name": "Engraving", "value": "A" }],
+      "discount_allocations": [{ "amount": 1.15, "discount_application_index": 0 }]
+    }
+  ],
+  "shipping_lines": [
+    { "title": "Standard", "price": "99.00", "discounted_price": "49.00" },
+    { "title": "COD fee", "price": "30.00" },
+    { "title": "Promo", "price": null }
+  ],
+  "note_attributes": [
+    { "name": "Gift_Note ", "value": "  Happy Diwali, Maa!  " },
+    { "name": "utm_source", "value": "ig" }
+  ]
+}
